@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Bada Finance | Talk to a Loan Advisor</title>
+    <meta
+      name="description"
+      content="Reach Bada Finance for home loan, personal loan, business loan, LAP, and working capital guidance. Contact our advisors or send an enquiry."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body data-page="contact">
+    <div class="site-shell">
+      <div class="announcement">
+        <div class="container">
+          <div>Talk to a real advisor and get a cleaner next-step recommendation.</div>
+          <div><span>Response window:</span> Within 1 business day for standard enquiries</div>
+        </div>
+      </div>
+
+      <header class="site-header">
+        <div class="container nav-wrap">
+          <a class="brand" href="index.html">
+            <span class="brand-mark">BF</span>
+            <span>
+              Bada Finance
+              <small>Loan advisory & distribution</small>
+            </span>
+          </a>
+          <nav class="nav-links" aria-label="Primary">
+            <a href="index.html" data-nav="home">Home</a>
+            <a href="about.html" data-nav="about">About</a>
+            <a href="services.html" data-nav="services">Services</a>
+            <a href="emi-calculator.html" data-nav="calculator">EMI Calculator</a>
+            <a href="contact.html" data-nav="contact">Contact</a>
+          </nav>
+          <div class="nav-cta">
+            <a class="btn btn-secondary" href="services.html">Compare Products</a>
+            <a class="btn btn-primary" href="tel:+912240135107">Call Now</a>
+            <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="page-hero">
+          <div class="container">
+            <div class="panel">
+              <span class="eyebrow">Contact</span>
+              <h1>Start with a useful conversation, not a vague form.</h1>
+              <p>
+                This page replaces the old broken template content with cleaner contact details, an honest enquiry form,
+                and branch information that is easier to scan.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container contact-grid">
+            <div class="panel form-card">
+              <h2>Request a callback</h2>
+              <p class="muted">
+                This front-end form validates cleanly in the browser. Connect it to your backend, CRM, or inbox for
+                live production use.
+              </p>
+
+              <form data-contact-form novalidate>
+                <div class="form-row">
+                  <label for="name">Full name</label>
+                  <input id="name" name="name" type="text" placeholder="Your full name" />
+                </div>
+                <div class="form-row">
+                  <label for="phone">Phone number</label>
+                  <input id="phone" name="phone" type="tel" placeholder="10-digit mobile number" />
+                </div>
+                <div class="form-row">
+                  <label for="city">City</label>
+                  <input id="city" name="city" type="text" placeholder="Mumbai, Pune, Delhi..." />
+                </div>
+                <div class="form-row">
+                  <label for="loanType">Loan type</label>
+                  <select id="loanType" name="loanType">
+                    <option value="">Select a product</option>
+                    <option>Home Loan</option>
+                    <option>Personal Loan</option>
+                    <option>Business Loan</option>
+                    <option>Loan Against Property</option>
+                    <option>Working Capital Loan</option>
+                    <option>Car-Backed Loan</option>
+                  </select>
+                </div>
+                <div class="form-row">
+                  <label for="message">Requirement</label>
+                  <textarea id="message" name="message" placeholder="Tell us what you need and how quickly you need it."></textarea>
+                </div>
+                <button class="btn btn-primary btn-block" type="submit">Submit Enquiry</button>
+                <div class="form-message" aria-live="polite"></div>
+              </form>
+            </div>
+
+            <div class="panel info-card">
+              <h2>Direct contact details</h2>
+              <ul class="contact-list">
+                <li>
+                  <strong>Phone</strong>
+                  +91 22 4013 5107
+                </li>
+                <li>
+                  <strong>Email</strong>
+                  info@badafinance.com
+                </li>
+                <li>
+                  <strong>Head office</strong>
+                  MJ House, LBS Road, Vikhroli West, Opp. Cipla, Mumbai, Maharashtra 400083
+                </li>
+                <li>
+                  <strong>Working hours</strong>
+                  Monday to Saturday, 10:00 AM to 6:00 PM
+                </li>
+              </ul>
+
+              <div class="kpi-row">
+                <div class="kpi">
+                  <strong>1 day</strong>
+                  typical callback window
+                </div>
+                <div class="kpi">
+                  <strong>6</strong>
+                  core finance categories
+                </div>
+                <div class="kpi">
+                  <strong>CRM-ready</strong>
+                  form behavior
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container">
+            <div class="section-top">
+              <div class="section-copy">
+                <span class="eyebrow">Branches</span>
+                <h2>Representative service presence.</h2>
+                <p>Use these blocks as clean placeholders until final branch and city data is fully confirmed.</p>
+              </div>
+            </div>
+
+            <div class="branch-grid">
+              <article class="branch-card">
+                <h3>Mumbai</h3>
+                <p class="muted">MJ House, LBS Road, Vikhroli West, Opp. Cipla, Mumbai, Maharashtra 400083</p>
+              </article>
+              <article class="branch-card">
+                <h3>Pune</h3>
+                <p class="muted">2nd Floor, B1, Cerebrum IT Park, Kalyani Nagar, Pune, Maharashtra 411014</p>
+              </article>
+              <article class="branch-card">
+                <h3>Delhi NCR</h3>
+                <p class="muted">Rajouri Garden and NCR enquiries can be routed through the central advisory desk.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container">
+          <div class="footer-grid">
+            <div>
+              <a class="brand" href="index.html">
+                <span class="brand-mark">BF</span>
+                <span>
+                  Bada Finance
+                  <small>Loan advisory & distribution</small>
+                </span>
+              </a>
+            </div>
+            <div class="footer-links">
+              <div>
+                <h3>Pages</h3>
+                <ul class="footer-list">
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="emi-calculator.html">EMI Calculator</a></li>
+                </ul>
+              </div>
+              <div>
+                <h3>Legal</h3>
+                <ul class="footer-list">
+                  <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                  <li><a href="terms-of-use.html">Terms of Use</a></li>
+                  <li><a href="disclaimer.html">Disclaimer</a></li>
+                </ul>
+              </div>
+              <div>
+                <h3>Contact</h3>
+                <ul class="footer-list">
+                  <li><strong>Phone</strong> +91 22 4013 5107</li>
+                  <li><strong>Email</strong> info@badafinance.com</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div>Copyright <span data-year></span> Bada Finance.</div>
+            <div>Static front end ready for integration.</div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

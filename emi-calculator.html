@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMI Calculator | Plan Monthly Loan Repayments</title>
+    <meta
+      name="description"
+      content="Use the Bada Finance EMI calculator to estimate your monthly instalment, total repayment, and interest cost in seconds."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body data-page="calculator">
+    <div class="site-shell">
+      <div class="announcement">
+        <div class="container">
+          <div>Estimate affordability before you apply.</div>
+          <div><span>Included:</span> EMI, total interest, total repayment</div>
+        </div>
+      </div>
+
+      <header class="site-header">
+        <div class="container nav-wrap">
+          <a class="brand" href="index.html">
+            <span class="brand-mark">BF</span>
+            <span>
+              Bada Finance
+              <small>Loan advisory & distribution</small>
+            </span>
+          </a>
+          <nav class="nav-links" aria-label="Primary">
+            <a href="index.html" data-nav="home">Home</a>
+            <a href="about.html" data-nav="about">About</a>
+            <a href="services.html" data-nav="services">Services</a>
+            <a href="emi-calculator.html" data-nav="calculator">EMI Calculator</a>
+            <a href="contact.html" data-nav="contact">Contact</a>
+          </nav>
+          <div class="nav-cta">
+            <a class="btn btn-secondary" href="services.html">See Products</a>
+            <a class="btn btn-primary" href="contact.html">Discuss Eligibility</a>
+            <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="page-hero">
+          <div class="container">
+            <div class="panel">
+              <span class="eyebrow">Calculator</span>
+              <h1>A practical EMI calculator with results that update instantly.</h1>
+              <p>
+                This tool adds actual utility to the site instead of serving as a placeholder page. Adjust the inputs
+                and use the output as a quick planning reference before you speak with an advisor.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container calculator-grid">
+            <div class="panel calculator-card">
+              <h2>Loan details</h2>
+              <form data-calculator-form>
+                <div class="form-row">
+                  <label for="loanAmount">Loan amount</label>
+                  <input id="loanAmount" type="number" min="50000" step="10000" value="2500000" />
+                </div>
+                <div class="form-row">
+                  <label for="interestRate">Interest rate (% per annum)</label>
+                  <input id="interestRate" type="number" min="1" max="36" step="0.1" value="10.5" />
+                </div>
+                <div class="form-row">
+                  <label for="tenureYears">Tenure (years)</label>
+                  <input id="tenureYears" type="number" min="1" max="30" step="1" value="10" />
+                </div>
+              </form>
+            </div>
+
+            <div class="calculator-figure">
+              <div class="result-card panel">
+                <div class="result-label">Estimated monthly EMI</div>
+                <div class="result-value" data-output="emi">Rs 0</div>
+                <div class="breakup">
+                  <div class="breakup-item">
+                    <span>Total interest</span>
+                    <strong data-output="interest">Rs 0</strong>
+                  </div>
+                  <div class="breakup-item">
+                    <span>Total repayment</span>
+                    <strong data-output="total">Rs 0</strong>
+                  </div>
+                  <div class="breakup-item">
+                    <span>Interest rate</span>
+                    <strong data-output="rate">0%</strong>
+                  </div>
+                  <div class="breakup-item">
+                    <span>Tenure</span>
+                    <strong data-output="tenure">0 years</strong>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel card">
+                <h3>How to use it</h3>
+                <ul class="check-list">
+                  <li>Increase loan size to see how EMI pressure changes</li>
+                  <li>Test rate sensitivity before shortlisting lender options</li>
+                  <li>Use the result as planning guidance, not a final sanction quote</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container">
+          <div class="footer-grid">
+            <div>
+              <a class="brand" href="index.html">
+                <span class="brand-mark">BF</span>
+                <span>
+                  Bada Finance
+                  <small>Loan advisory & distribution</small>
+                </span>
+              </a>
+            </div>
+            <div class="footer-links">
+              <div>
+                <h3>Pages</h3>
+                <ul class="footer-list">
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </div>
+              <div>
+                <h3>Legal</h3>
+                <ul class="footer-list">
+                  <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                  <li><a href="terms-of-use.html">Terms of Use</a></li>
+                  <li><a href="disclaimer.html">Disclaimer</a></li>
+                </ul>
+              </div>
+              <div>
+                <h3>Contact</h3>
+                <ul class="footer-list">
+                  <li><strong>Phone</strong> +91 22 4013 5107</li>
+                  <li><strong>Email</strong> info@badafinance.com</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div>Copyright <span data-year></span> Bada Finance.</div>
+            <div>Estimator values update live in the browser.</div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
